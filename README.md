@@ -1,70 +1,72 @@
-# fake-news-detection
-Fake News Detection Using Logistic Regression and TF-IDF Features
+# Fake News Detection Using Logistic Regression 📰🤖
 
-This project focuses on detecting fake news using machine learning techniques, specifically **Logistic Regression** with TF-IDF features and Word Embeddings. The goal is to classify news articles as either **Fake** or **Real** based on their content.
+This project focuses on detecting fake news using machine learning techniques, specifically **Logistic Regression** with TF-IDF features. The goal is to classify news articles as either **Fake** or **Real** based on their content.
 
 ---
 
-**Project Overview**
+## **Project Overview**
 In this project:
-- I preprocess the text data using techniques like stopword removal and lemmatization.
-- I use **TF-IDF vectorization** to represent the text as numerical features.
-- I train and evaluate a **Logistic Regression** model on a dataset of labeled news articles.
-- I visualize model performance using metrics like the confusion matrix and ROC-AUC.
+- The dataset is processed and cleaned in a step-by-step manner within the Jupyter Notebook.
+- **TF-IDF vectorization** is used to convert textual data into numerical features.
+- A **Logistic Regression** model is trained and evaluated on the dataset.
 
 ---
 
-**Features**
-- **Text Preprocessing**:
-  - Cleaned text data by removing stopwords and lemmatizing words.
-  - Represented text data using **TF-IDF vectorization** and **GloVe embeddings** for semantic understanding.
-- **Machine Learning**:
-  - Trained a **Logistic Regression** model to classify Fake vs. Real news.
-  - Optimized hyperparameters using **GridSearchCV**.
-- **Performance Metrics**:
-  - Evaluated accuracy, precision, recall, F1-score, and ROC-AUC.
-  - Generated visualizations like confusion matrix and ROC curve.
+## **Dataset**
+The dataset used for this project can be downloaded from Kaggle:
+- [Fake News Dataset](https://www.kaggle.com/c/fake-news/data)
+
+### **Instructions**:
+1. Download the dataset from the Kaggle link above.
+2. Place the dataset files (e.g., `train.csv` and `test.csv`) in your working directory if you want to preprocess it from scratch.
+3. Alternatively, run the Jupyter Notebook to see the preprocessing and modeling steps.
+
+> Note: The dataset is **not included** in this repository due to size limitations.
 
 ---
 
-**Dataset**
-The dataset used for this project is from [Kaggle Fake News Dataset](https://www.kaggle.com/c/fake-news/data). It contains:
-- **Train Data**: News articles labeled as `Fake` or `Real`.
-- **Test Data**: Unlabeled data for evaluation.
-- **Submit Data**: Labeles for the unlabeled test data.
-
+## **Features**
+- 🧹 **Text Preprocessing**:
+  - Stopword removal and text cleaning are performed in the notebook.
+  - Data is vectorized using **TF-IDF**.
+- 🧠 **Machine Learning**:
+  - A **Logistic Regression** model is trained to classify Fake vs. Real news.
+- 📊 **Evaluation Metrics**:
+  - Metrics include Accuracy, Precision, Recall, F1-score, and ROC-AUC.
 
 ---
 
-**Results**
+## **Project Files**
+This repository contains:
+1. `FakeNews.ipynb`: The main Jupyter Notebook with the following steps:
+   - Dataset preprocessing.
+   - Feature extraction using TF-IDF.
+   - Logistic Regression model training and evaluation.
+2. Images of the results visulizations.
+
+---
+
+## **Results**
 - **Accuracy**: 64% on the test set.
 - **ROC-AUC**: 0.68
-- **Precision/Recall/F1-score**:
-  - Fake News Class:
-    - Precision: 0.69
-    - Recall: 0.63
-    - F1-score: 0.66
-  - Real News Class:
-    - Precision: 0.59
-    - Recall: 0.66
-    - F1-score: 0.6
-
-**Visualizations:**
-1. **Confusion Matrix**:
-   ![Confusion Matrix](images/confusion_matrix.png)
-
-2. **ROC Curve**:
-   ![ROC Curve](images/roc_curve.png)
-
-3. **Metrics**:
-   ![Metrics](images/Metrics.png)
+- **Confusion Matrix**:
+  - Visualized in the notebook.
+- **ROC Curve**:
+  - Visualized in the notebook.
+- **Metrics**:
+  - Visualized in the notebook.
 
 ---
 
-**Installation**
-Follow these steps to set up and run the project locally:
+## **How to Run the Project**
+### **Step 1: Clone the Repository**
+Clone this repository to your local machine:
+```bash
+git clone https://github.com/your-username/fake-news-detection.git
+cd fake-news-detection
+```
+### **Step 2: Download the Data**
+- [Fake News Dataset](https://www.kaggle.com/c/fake-news/data)
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/nouuurrr/fake-news-detection.git
-   cd fake-news-detection
+### **Step 3: Run the Notebook**
+[FakeNews.ipynb](notebook/FakeNews.ipynb)
